@@ -1,0 +1,113 @@
+Bill:Open   <===>    VendBill:A
+Bill:Paid In Full   <===>    VendBill:B
+Bill Payment:Voided   <===>    VendPymt:V
+Bill Payment:Online Bill Pay Pending Accounting Approval   <===>    VendPymt:Z
+Cash Sale:Unapproved Payment   <===>    CashSale:A
+Cash Sale:Not Deposited   <===>    CashSale:B
+Cash Sale:Deposited   <===>    CashSale:C
+Check:Voided   <===>    Check:V
+Check:Online Bill Pay Pending Accounting Approval   <===>    Check:Z
+Commission:Pending Payment   <===>    Commissn:A
+Commission:Overpaid   <===>    Commissn:O
+Commission:Pending Accounting Approval   <===>    Commissn:P
+Commission:Rejected by Accounting   <===>    Commissn:R
+Commission:Paid in Full   <===>    Commissn:X
+Credit Memo:Open   <===>    CustCred:A
+Credit Memo:Fully Applied   <===>    CustCred:B
+Customer Deposit:Not Deposited   <===>    CustDep:A
+Customer Deposit:Deposited   <===>    CustDep:B
+Customer Deposit:Fully Applied   <===>    CustDep:C
+Customer Refund:Voided   <===>    CustRfnd:V
+Expense Report:In Progress   <===>    ExpRept:A
+Expense Report:Pending Supervisor Approval   <===>    ExpRept:B
+Expense Report:Pending Accounting Approval   <===>    ExpRept:C
+Expense Report:Rejected by Supervisor   <===>    ExpRept:D
+Expense Report:Rejected by Accounting   <===>    ExpRept:E
+Expense Report:Approved by Accounting   <===>    ExpRept:F
+Expense Report:Approved (Overridden) by Accounting   <===>   ExpRept:G
+Expense Report:Rejected (Overridden) by Accounting   <===>   ExpRept:H
+Expense Report:Paid In Full   <===>   ExpRept:I
+Invoice:Open   <===>   CustInvc:A
+Invoice:Paid In Full   <===>   CustInvc:B
+Item Fulfillment:Picked   <===>   ItemShip:A
+Item Fulfillment:Packed   <===>   ItemShip:B
+Item Fulfillment:Shipped   <===>   ItemShip:C
+Journal:Pending Approval   <===>   Journal:A
+Journal:Approved for Posting   <===>   Journal:B
+Opportunity:In Progress   <===>   Opprtnty:A
+Opportunity:Issued Estimate   <===>   Opprtnty:B
+Opportunity:Closed – Won   <===>   Opprtnty:C
+Opportunity:Closed – Lost   <===>   Opprtnty:D
+Paycheck:Undefined   <===>   Paycheck:A
+Paycheck:Pending Tax Calculation   <===>   Paycheck:C
+Paycheck:Pending Commitment   <===>   Paycheck:D
+Paycheck:Committed   <===>   Paycheck:F
+Paycheck:Preview   <===>   Paycheck:P
+Paycheck:Reversed   <===>   Paycheck:R
+Payment:Unapproved Payment   <===>   CustPymt:A
+Payment:Not Deposited   <===>   CustPymt:B
+Payment:Deposited   <===>   CustPymt:C
+Payroll Liability Check:Voided   <===>   LiabPymt:V
+Purchase Order:Pending Supervisor Approval   <===>   PurchOrd:A
+Purchase Order:Pending Receipt   <===>   PurchOrd:B
+Purchase Order:Rejected by Supervisor   <===>   PurchOrd:C
+Purchase Order:Partially Received   <===>   PurchOrd:D
+Purchase Order:Pending Billing/Partially Received   <===>   PurchOrd:E
+Purchase Order:Pending Bill   <===>   PurchOrd:F
+Purchase Order:Fully Billed   <===>   PurchOrd:G
+Purchase Order:Closed   <===>   PurchOrd:H
+Quote:Open   <===>   Estimate:A
+Quote:Processed   <===>   Estimate:B
+Quote:Closed   <===>   Estimate:C
+Quote:Voided   <===>   Estimate:V
+Quote:Expired   <===>   Estimate:X
+Return Authorization:Pending Approval   <===>   RtnAuth:A
+Return Authorization:Pending Receipt   <===>   RtnAuth:B
+Return Authorization:Cancelled   <===>   RtnAuth:C
+Return Authorization:Partially Received   <===>   RtnAuth:D
+Return Authorization:Pending Refund/Partially Received   <===>   RtnAuth:E
+Return Authorization:Pending Refund   <===>   RtnAuth:F
+Return Authorization:Refunded   <===>   RtnAuth:G
+Return Authorization:Closed   <===>   RtnAuth:H
+Sales Order:Pending Approval   <===>   SalesOrd:A
+Sales Order:Pending Fulfillment   <===>   SalesOrd:B
+Sales Order:Cancelled   <===>   SalesOrd:C
+Sales Order:Partially Fulfilled   <===>   SalesOrd:D
+Sales Order:Pending Billing/Partially Fulfilled   <===>   SalesOrd:E
+Sales Order:Pending Billing   <===>   SalesOrd:F
+Sales Order:Billed   <===>   SalesOrd:G
+Sales Order:Closed   <===>   SalesOrd:H
+Sales Tax Payment:Voided   <===>   TaxPymt:V
+Sales Tax Payment:Online Bill Pay Pending Accounting Approval   <===>   TaxPymt:Z
+Statement Charge:Open   <===>   CustChrg:A
+Statement Charge:Paid In Full   <===>   CustChrg:B
+Tax Liability Cheque:Voided   <===>   TaxLiab:V
+Tegata Payable:Endorsed   <===>   TegPybl:E
+Tegata Payable:Issued   <===>   TegPybl:I
+Tegata Payable:Paid   <===>   TegPybl:P
+Tegata Receivables:Collected   <===>   TegRcvbl:C
+Tegata Receivables:Discounted   <===>   TegRcvbl:D
+Tegata Receivables:Endorsed   <===>   TegRcvbl:E
+Tegata Receivables:Holding   <===>   TegRcvbl:H
+Transfer Order:Pending Approval   <===>   TrnfrOrd:A
+Transfer Order:Pending Fulfillment   <===>   TrnfrOrd:B
+Transfer Order:Rejected   <===>   TrnfrOrd:C
+Transfer Order:Partially Fulfilled   <===>   TrnfrOrd:D
+Transfer Order:Pending Receipt/Partially Fulfilled   <===>   TrnfrOrd:E
+Transfer Order:Pending Receipt   <===>   TrnfrOrd:F
+Transfer Order:Received   <===>   TrnfrOrd:G
+Transfer Order:Closed   <===>   TrnfrOrd:H
+Vendor Return Authorization:Pending Approval   <===>   VendAuth:A
+Vendor Return Authorization:Pending Return   <===>   VendAuth:B
+Vendor Return Authorization:Cancelled   <===>   VendAuth:C
+Vendor Return Authorization:Partially Returned   <===>   VendAuth:D
+Vendor Return Authorization:Pending Credit/Partially Returned   <===>   VendAuth:E
+Vendor Return Authorization:Pending Credit   <===>   VendAuth:F
+Vendor Return Authorization:Credited   <===>   VendAuth:G
+Vendor Return Authorization:Closed   <===>   VendAuth:H
+Work Order:Planning | WorkOrd:A
+Work Order:Pending Build   <===>   WorkOrd:B
+Work Order:Cancelled   <===>   WorkOrd:C
+Work Order:Partially Built   <===>   WorkOrd:D
+Work Order:Built   <===>   WorkOrd:G
+Work Order:Closed   <===>   WorkOrd:H
